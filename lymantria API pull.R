@@ -2,7 +2,7 @@
 
 library(rinat)
 library(ggplot2)
-
+library(tidyverse)
 
 #
 # set a geographic area for pulling data from
@@ -10,13 +10,16 @@ bounds <- c(30,-90,50,-50)
 
 # bound by dates to make sure its only spring/summer collections
 
-ld_dat <- get_inat_obs(taxon_name = "Lymatria dispar", bounds = bounds, maxresults=5000)
+ld_dat <- get_inat_obs(taxon_name = "Lymantria dispar", bounds = bounds, maxresults=5000)
 
 
 
 # download just the location, dates, and ID data to use with the snack weevil methods:
+# commented out so I don't write over current dataframe 
 
 
+# select(ld_dat, c("datetime", "common_name", "latitude","longitude", "observed_on", "quality_grade")) %>%
+#  write.csv(file="./Data/Output/inatlymantria.csv")
 
 
 
