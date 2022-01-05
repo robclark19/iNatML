@@ -1,5 +1,11 @@
 # Dec 28 2021 attempt at pulling Lymantria dispar data from iNat #
 
+# libraries for associated python script
+# library(reticulate)
+# py_install("pandas")
+# py_install("requests")
+
+# libraries for R script
 library(rinat)
 library(ggplot2)
 library(tidyverse)
