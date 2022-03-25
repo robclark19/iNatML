@@ -9,6 +9,7 @@
 library(rinat)
 library(ggplot2)
 library(tidyverse)
+library(lubridate)
 
 #
 # set a geographic area for pulling data from
