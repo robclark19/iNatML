@@ -21,6 +21,17 @@ ld_dat <- get_inat_obs(taxon_name = "Lymantria dispar", bounds = bounds, maxresu
 # select(ld_dat, c("datetime", "common_name", "latitude","longitude", "observed_on", "quality_grade")) %>%
 #  write.csv(file="./Data/Output/inatlymantria.csv")
 
+# idea:
+# do we include just a single month, or all months? do we include global data or regional data?
+# summer 2022 can be used to evaluate which of these candidate models makes the best prediction
+# does a simple degree day GAM work best or climate fancy pants machine learning technique?
+
+# basic info works well for a simple paper, somefieldwork, and developing R + python pipeline
+
+# idea:
+# a two peak GAM model should be what we get for larvae and adults-use the first peak to predict caterpillars!
+
+
 
 
 # plot map of observations
